@@ -1,0 +1,17 @@
+.begin{
+
+  &:before{
+    content: '';
+    display: block;
+    height: 800px;
+    background: #142236;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: calc(124/1920*100%);
+    background: url("/images/begin/svg.svg") center bottom;
+    background-size: 100% auto;
+  }
+}

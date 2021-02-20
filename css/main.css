@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Muli";
+  src: local("Muli Regular"), local("Muli-Regular"), url("../fonts/Muli-Regular.woff2") format("woff2"), url("../fonts/Muli-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muli";
+  src: local("Muli Bold"), local("Muli-Bold"), url("../fonts/Muli-Bold.woff2") format("woff2"), url("../fonts/Muli-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Muli";
+  src: local("Muli SemiBold"), local("Muli-SemiBold"), url("../fonts/Muli-SemiBold.woff2") format("woff2"), url("../fonts/Muli-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+input::-ms-clear {
+  display: none;
+}
+
+html.ie9 * {
+  border-radius: 0 !important;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.42;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 300;
+  color: #6f6f6f;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+.content ul {
+  margin: 1em 0;
+  padding-left: 40px;
+}
+.content ul li {
+  list-style: disc;
+}
+.content h1 {
+  margin: 0.67em 0;
+}
+.content h2 {
+  margin: 0.83em 0;
+}
+.content h3 {
+  margin: 1em 0;
+}
+.content h4 {
+  margin: 1.33em 0;
+}
+.content h5 {
+  margin: 1.67em 0;
+}
+.content h5 {
+  margin: 2.33em 0;
+}
+.content p {
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input, textarea {
+  border: none;
+  background: none;
+  outline: none;
+  font: inherit;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__title {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  margin-right: auto;
+}
+.header__nav {
+  margin-right: 100px;
+}
+.header__contacts {
+  margin: 0 -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__contact {
+  padding: 7.5px;
+  fill: #ffffff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__contact:hover {
+  fill: #41adff;
+}
+.header__contact svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -20px;
+}
+.nav__item {
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.nav__item:hover {
+  color: #41adff;
+}
+
+.index {
+  padding-bottom: 100px;
+}
+.index__svg-wrap {
+  height: 854px;
+  background: #142236;
+}
+.index__svg svg {
+  display: block;
+}
+
+.begin:before {
+  content: "";
+  display: block;
+  height: 800px;
+  background: #142236;
+}
+.begin:after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: calc(124/1920*100%);
+  background: url("/images/begin/svg.svg") center bottom;
+  background-size: 100% auto;
+}
+/*# sourceMappingURL=main.css.map */

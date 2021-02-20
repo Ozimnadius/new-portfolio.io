@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .container{
+    display: flex;
+    align-items: center;
+  }
+
+  &__title{
+    color: $bg;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: auto;
+  }
+  
+  &__nav{
+    margin-right: 100px;
+  }
+
+  &__contacts{
+    margin: 0 -10px;
+    display: flex;
+  }
+
+  &__contact{
+    padding: 7.5px;
+    fill: $bg;
+    @include tr;
+
+    &:hover{
+      fill: $btn;
+    }
+
+    svg{
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+  }
+
+}
+
+.nav{
+  display: flex;
+  margin: 0 -20px;
+
+  &__item{
+    color: $bg;
+    font-weight: 400;
+    margin: 0 20px;
+    @include tr;
+
+    &:hover{
+      color: $btn;
+    }
+  }
+}

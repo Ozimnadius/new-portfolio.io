@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli Regular'), local('Muli-Regular'),
+        url('Muli-Regular.woff2') format('woff2'),
+        url('Muli-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli Bold'), local('Muli-Bold'),
+        url('Muli-Bold.woff2') format('woff2'),
+        url('Muli-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    src: local('Muli SemiBold'), local('Muli-SemiBold'),
+        url('Muli-SemiBold.woff2') format('woff2'),
+        url('Muli-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+        url('Montserrat-Light.woff2') format('woff2'),
+        url('Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

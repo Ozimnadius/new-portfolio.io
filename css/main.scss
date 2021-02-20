@@ -1,0 +1,32 @@
+//variables
+//fonts
+$font: 'Montserrat', Arial, sans-serif;
+
+//colors
+$text: #6f6f6f;
+$bg: #ffffff;
+$title: #242424;
+$btn: #41adff;
+
+//another
+$font-size: 14px;
+
+//layout
+@import "layout/mixins";
+@import "layout/fonts";
+@import "layout/smart-grid";
+@import "layout/adjustment";
+@import "layout/common";
+
+//sections
+@import "sections/header";
+@import "sections/index";
+@import "sections/begin";
+@import "sections/footer";
+
+
+.debug {
+  //@include debug(rgba(0,0,0,0.3), 1px solid red);
+  //z-index: 100;
+  //top: 0;
+}
