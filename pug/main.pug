@@ -12,8 +12,6 @@ html(lang="ru")
         title Portfolio | #{title}
         link(rel='stylesheet' href='css/vendor.min.css')
         link(rel='stylesheet' href='css/main.css')
-        // Для изменений после верстки
-        link(rel='stylesheet' href='css/custom.css')
 
         link(rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png")
         link(rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png")
@@ -29,8 +27,8 @@ html(lang="ru")
                     .header__title Begin.
                     .header__nav
                         nav.nav
-                            each i in ['Home','About us','Services','Portfolio','Blog','Contact us']
-                                a(href='#'+i).nav__item= i
+                            each i in nav
+                                a(href='#'+i.id).nav__item= i.value
                     .header__contacts
                         a(href='/').header__contact
                             <svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
@@ -84,5 +82,3 @@ html(lang="ru")
 
         script(src='js/vendor.min.js')
         script(src='js/main.min.js')
-        // Для изменений после верстки
-        script(src='js/custom.js')

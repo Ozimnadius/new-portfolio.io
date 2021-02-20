@@ -1,8 +1,10 @@
 .header {
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
+  padding-top: 20px;
 
   .container{
     display: flex;
@@ -51,10 +53,32 @@
     color: $bg;
     font-weight: 400;
     margin: 0 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+
+
     @include tr;
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      width: 100%;
+      height: 1px;
+      background-color: $btn;
+      transform: translateX(-100%);
+      @include tr;
+    }
+
 
     &:hover{
       color: $btn;
+      &:before{
+        transform: translateX(0);
+      }
     }
   }
 }
