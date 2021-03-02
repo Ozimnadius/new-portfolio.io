@@ -1,0 +1,54 @@
+.filter{
+  display: flex;
+  align-items: baseline;
+
+  font-family: Muli;
+  font-weight: 600;
+  font-size: 18px;
+
+
+  &__title{
+    font-weight: 700;
+    color: $btn;
+    margin-right: 30px;
+  }
+
+  &__list{
+    display: flex;
+    align-items: baseline;
+    margin: -20px;
+  }
+
+  &__item{
+    margin: 0 20px;
+    position: relative;
+    @include tr;
+
+    &:hover{
+      color: $btn;
+    }
+
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.5px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $btn;
+      opacity: 0;
+      @include tr;
+    }
+
+    &.active{
+      color: $text;
+      &:before{
+        opacity: 1;
+      }
+    }
+
+
+  }
+}

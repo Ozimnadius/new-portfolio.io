@@ -27,7 +27,20 @@
 
   &:hover{
     &:before{
-      width: 165px;
+      width: 100%;
     }
   }
+}
+
+.title{
+  font-family: Muli;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sub{
+  color: #cccccc;
+  font-size: 16px;
+  font-weight: 400;
 }
