@@ -1,0 +1,75 @@
+.contacts{
+
+  &__top{
+    background-color: $btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bg;
+    padding: 30px;
+  }
+
+  &__img{
+    flex-shrink: 0;
+    margin-right: 20px;
+    svg{
+      width: 70px;
+      height: 70px;
+      fill: $bg
+    }
+  }
+
+  &__small{
+
+  }
+
+  &__big{
+    color: #fefefe;
+    //font-family: Muli;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+
+  &__bottom{
+    background-color: #142236;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  &__addr{
+    margin-bottom: 50px;
+  }
+
+  &__tel{
+    margin-bottom: 40px;
+  }
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  color: $bg;
+  font-size: 18px;
+  fill: $bg;
+  @include tr;
+
+  &:hover{
+    color: $btn;
+    fill: $btn;
+  }
+
+  &__left{
+    flex-shrink: 0;
+    width: 36px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  svg{
+    display: block;
+  }
+}

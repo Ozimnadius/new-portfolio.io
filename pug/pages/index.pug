@@ -18,7 +18,7 @@ block content
                             h4 I am Mikle Seregin
                             h2 Professional Web-Developer
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            button(type='button').btn Hire Me
+                            a(href='https://hh.ru/resume/e1aaa07eff016819120039ed1f74545a356245' target='_blank').btn Hire Me
         //- about
         section.index__about#about
             .about
@@ -39,7 +39,7 @@ block content
                                 li.about__item Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut
                             a(href='https://hh.ru/resume/e1aaa07eff016819120039ed1f74545a356245' target='_blank').about__resume.btn View
         //- services
-        section.index__services
+        section.index__services#services
             .services
                 .container
                     .sub.services__sub What i can do better
@@ -1157,19 +1157,83 @@ block content
                         .filter
                             .filter__title Filters :
                             .filter__list
-                                a(href='#all').filter__item.active All
-                                a(href='#shop').filter__item E-shop
-                                a(href='#corp').filter__item Corporate
-                                a(href='#land').filter__item Landing
-                                a(href='#other').filter__item Other
+                                a(href='#' data-type='all').filter__item.active All
+                                a(href='#' data-type='shop').filter__item E-shop
+                                a(href='#' data-type='corp').filter__item Corporate
+                                a(href='#' data-type='land').filter__item Landing
+                                a(href='#' data-type='other').filter__item Other
                     .portfolio__grid
-                        each i in portfolioList
-                            div(data-type=i.type).portfolio__item
-                                .portfolio__img
-                                    +image(i.thumb,'potrfolio__img-img')
-                                .portfolio__links
-                                    a(href=i.img target='_blank').portfolio__view.portfolio__link View Project
-                                    a(href=i.link target='_blank').portfolio__link.portfolio__go Go to project
+                         // each i in portfolioList
+                         //     div(data-type=i.type).portfolio__item
+                         //         .portfolio__img
+                         //             +image(i.thumb,'potrfolio__img-img')
+                         //         .portfolio__links
+                         //             a(href=i.img target='_blank').portfolio__view.portfolio__link View Project
+                         //             a(href=i.link target='_blank').portfolio__link.portfolio__go Go to project
+        //- feed
+        section.index__feed#contact
+            .feed
+                .container
+                    .feed__grid
+                        .feed__left
+                            h2.feed__title.title get in touch
+                            p.feed__desc
+                                |Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                br
+                                |eiusmod tempor incididunt ut
+                            form(action='ajax.php' method='POST').feed__form
+                                .feed__fields
+                                    .feed__field.feed__name
+                                        input(type='text' name='name' placeholder='Name').feed__input
+                                    .feed__field.feed__mail
+                                        input(type='email' name='email' placeholder='Email').feed__input
+                                    .feed__field.feed__msg
+                                        textarea(placeholder='Message...').feed__input.feed__input_area
+                                button(type='submit').feed__submit.btn Send Message
+                        .feed__right
+                            .contacts
+                                .contacts__top
+                                    .contacts__img
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.656 53.656">
+                                        <path d="M45.799,8.343c-4.848-4.852-11.57-7.859-18.97-7.858C19.427,0.484,12.706,3.491,7.858,8.343 C3.006,13.19-0.001,19.911,0,27.313v10.343h4.525V27.313c0.001-6.166,2.493-11.728,6.533-15.771 c4.043-4.04,9.604-6.531,15.771-6.533C32.994,5.01,38.556,7.5,42.6,11.542c4.04,4.043,6.531,9.604,6.532,15.771v17.778 c-0.001,0.542-0.213,1.012-0.568,1.371c-0.359,0.355-0.829,0.567-1.371,0.568H32.646v-1.616h-7.758 c-2.142,0-3.879,1.737-3.879,3.879c0,2.142,1.737,3.879,3.879,3.879h7.758v-1.616h14.545c1.778,0.001,3.408-0.727,4.571-1.894 c1.167-1.162,1.895-2.793,1.894-4.57V27.313C53.658,19.911,50.651,13.19,45.799,8.343z"/>
+                                        <path d="M39.758,23.435L39.758,23.435c-2.844-0.001-5.172,2.908-5.172,6.464v7.111c0,3.556,2.327,6.465,5.172,6.465h6.465v-20.04 H39.758z"/>
+                                        <path d="M13.899,23.434H7.434v20.04h6.465c2.844,0,5.172-2.909,5.172-6.465v-7.111C19.071,26.343,16.743,23.434,13.899,23.434z"/>
+                                        </svg>
+                                    .contacts__desc
+                                        .contacts__small Contact information
+                                        .contacts__big need help
+                                .contacts__bottom
+                                    .contacts__list
+                                        .contacts__addr.contact
+                                            .contact__left
+                                                <svg width="36px" height="36px" viewBox="-76 0 512 512"  xmlns="http://www.w3.org/2000/svg">
+                                                <path d="m180 0c-99.257812 0-180 81.742188-180 181 0 35.304688 10.226562 69.507812 29.574219 98.890625l150.425781 232.109375 150.425781-232.109375c19.347657-29.382813 29.574219-63.585937 29.574219-98.890625 0-99.257812-80.742188-181-180-181zm0 271c-49.628906 0-90-40.371094-90-90s40.371094-91 90-91 90 41.371094 90 91-40.371094 90-90 90zm0 0"/>
+                                                </svg>
+                                            .contact__right
+                                                a(href='https://earth.google.com/web/@49.98526549,46.71688269,-296.34777979a,9424793.9660275d,35y,-0h,0t,0r' target='_blank').addr
+                                                    |Eath, Solar System,
+                                                    br
+                                                    |Milky Way Galaxy
+                                        .contacts__tel.contact
+                                            .contact__left
+                                                <svg width="36px" height="36px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <path d="M249.513,156.877V0h-92.557c-18.235,0-36.092,6.286-50.281,17.701c-14.203,11.426-24.14,27.513-27.98,45.297l-3.47,16.071 C62.691,137.107,56.336,196.636,56.336,256s6.354,118.893,18.888,176.931l3.47,16.071c3.84,17.784,13.777,33.871,27.98,45.297 C120.864,505.714,138.721,512,156.956,512h92.557V355.123l-67.814-13.507c-13.343-56.209-13.343-115.023,0-171.232 L249.513,156.877z"/>
+                                                <path d="M288.636,184.996l-21.213,21.213c26.902,26.903,26.902,70.679,0,97.582l21.213,21.213 C327.236,286.403,327.236,223.597,288.636,184.996z"/>
+                                                <path d="M338.739,134.894l-21.213,21.213c54.53,54.53,54.53,143.257,0,197.787l21.213,21.213 C404.967,308.88,404.967,201.12,338.739,134.894z"/>
+                                                <path d="M386.239,87.394l-21.213,21.213c80.722,80.722,80.722,212.065,0,292.787l21.213,21.213 c44.77-44.77,69.425-104.293,69.425-167.606S431.009,132.163,386.239,87.394z"/>
+                                                </svg>
+                                            .contact__right
+                                                a(href='tel:+7(925)148-65-65').tel +7 (925) 148-65-65
+                                        .contacts__mail.contact
+                                            .contact__left
+                                                <svg width="36px" height="36px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <polygon points="339.392,258.624 512,367.744 512,144.896"/>
+                                                <polygon points="0,144.896 0,367.744 172.608,258.624"/>
+                                                <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/>
+                                                <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856 L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/>
+                                                </svg>
+                                            .contact__right
+                                                a(href='mailto:mikhail-seregin@yandex.ru').email mikhail-seregin@yandex.ru
 
 
 

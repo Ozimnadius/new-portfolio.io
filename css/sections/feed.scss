@@ -1,0 +1,86 @@
+.feed {
+  background-color: #fafafa;
+  padding: 120px 0;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-gap: 30px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 68px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: $btn;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 50px;
+  }
+
+  &__form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__fields {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'name mail' 'msg msg';
+    grid-gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  &__name {
+    grid-area: name;
+  }
+
+  &__mail {
+    grid-area: mail;
+  }
+
+  &__msg {
+    grid-area: msg;
+  }
+
+  &__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    background-color: $bg;
+    padding: 15px;
+
+    &_area {
+      height: 100%;
+      resize: none;
+    }
+  }
+
+  &__submit{
+    align-self: flex-end;
+    width: 165px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+}

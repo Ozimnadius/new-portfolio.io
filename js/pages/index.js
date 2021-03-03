@@ -14,5 +14,4 @@ window.addEventListener('load', function () {
             delay: 7000,
         },
     });
-
 });

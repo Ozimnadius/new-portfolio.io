@@ -34,6 +34,8 @@
 
   &__content {
     margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
   }
 
   &__img {
@@ -50,10 +52,13 @@
   svg {
     display: block;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    $offset: 15%;
+    top: -$offset;
+    bottom: -$offset;
+    left: -$offset;
+    right: -$offset;
+    width: calc(100% + #{$offset*2});
+    height: calc(100% + #{$offset*2});
   }
 
   .st0 {

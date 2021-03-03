@@ -1,9 +1,9 @@
 -
     var nav = [
-        {
-          id: 'home',
-          value: 'Home'
-        },
+        // {
+        //   id: 'home',
+        //   value: 'Home'
+        // },
         {
           id: 'about',
           value: 'About me'
@@ -16,10 +16,10 @@
           id: 'portfolio',
           value: 'Portfolio'
         },
-        {
-          id: 'blog',
-          value: 'Blog'
-        },
+        // {
+        //   id: 'blog',
+        //   value: 'Blog'
+        // },
         {
           id: 'contact',
           value: 'Contact me'
@@ -54,22 +54,393 @@
 -
     var portfolioList = [
         {
-            type: 'shop',
-            img: 'images/portfolio/santehtut/img.jpg',
-            thumb: 'images/portfolio/santehtut/img.jpg',
-            link: 'https://santehtut.ru/'
+            "type": "shop",
+            "img": "images/portfolio/maxirolls/img.jpg",
+            "thumb": "images/portfolio/maxirolls/thumb.jpg",
+            "link": "https://github.com/Ozimnadius/maxirolls.io"
         },
         {
-            type: 'land',
-            img: 'images/portfolio/loft-burger/img.jpg',
-            thumb: 'images/portfolio/loft-burger/img.jpg',
-            link: 'https://ozimnadius.github.io/burgers.github.io/'
+            "type": "land",
+            "img": "images/portfolio/mrcable/img.jpg",
+            "thumb": "images/portfolio/mrcable/thumb.jpg",
+            "link": "https://github.com/Ozimnadius/mrcable.io"
         },
         {
-            type: 'corp',
-            img: 'images/portfolio/loft-portfolio/img.jpg',
-            thumb: 'images/portfolio/loft-portfolio/img.jpg',
-            link: '#'
+            "type": "land",
+            "img": "images/portfolio/pilotmedia/img.jpg",
+            "thumb": "images/portfolio/pilotmedia/thumb.jpg",
+            "link": "http://pilotmedia.ru/"
         },
-
+        {
+            "type": "corp",
+            "img": "images/portfolio/meshchaninov/img.jpg",
+            "thumb": "images/portfolio/meshchaninov/thumb.jpg",
+            "link": "http://meshchaninov.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/lingua-planet/img.jpg",
+            "thumb": "images/portfolio/lingua-planet/thumb.jpg",
+            "link": "https://github.com/Ozimnadius/lingua-planet"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/center-implant/img.jpg",
+            "thumb": "images/portfolio/center-implant/thumb.jpg",
+            "link": "https://github.com/Ozimnadius/center-implant"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/radius-net/img.jpg",
+            "thumb": "images/portfolio/radius-net/thumb.jpg",
+            "link": "https://www.radius-net.com/"
+        },
+        {
+            "type": "land",
+            "img": "images/portfolio/dr-bekoev/img.jpg",
+            "thumb": "images/portfolio/dr-bekoev/thumb.jpg",
+            "link": "https://dr-bekoev.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/doka-saun/img.jpg",
+            "thumb": "images/portfolio/doka-saun/thumb.jpg",
+            "link": "https://www.doka-saun.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/magstor/img.jpg",
+            "thumb": "images/portfolio/magstor/thumb.jpg",
+            "link": "https://magstor.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/template/img.jpg",
+            "thumb": "images/portfolio/template/thumb.jpg",
+            "link": "https://github.com/Ozimnadius/template.io"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/wowbyket/img.jpg",
+            "thumb": "images/portfolio/wowbyket/thumb.jpg",
+            "link": "http://wowbyket.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/krasiris/img.jpg",
+            "thumb": "images/portfolio/krasiris/thumb.jpg",
+            "link": "https://krasiris.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/qwertysh/img.jpg",
+            "thumb": "images/portfolio/qwertysh/thumb.jpg",
+            "link": "https://qwertysh.ru/"
+        },
+        {
+            "type": "other",
+            "img": "images/portfolio/medklinik24/img.jpg",
+            "thumb": "images/portfolio/medklinik24/thumb.jpg",
+            "link": "http://gm5.medklinik24.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/inthestore/img.jpg",
+            "thumb": "images/portfolio/inthestore/thumb.jpg",
+            "link": "https://inthestore.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/zzvo/img.jpg",
+            "thumb": "images/portfolio/zzvo/thumb.jpg",
+            "link": "https://www.zzvo.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/21outdoor/img.jpg",
+            "thumb": "images/portfolio/21outdoor/thumb.jpg",
+            "link": "https://21outdoor.ru/"
+        },
+        {
+            "type": "other",
+            "img": "images/portfolio/mapcreator/img.jpg",
+            "thumb": "images/portfolio/mapcreator/thumb.jpg",
+            "link": "http://user359.teh-webcomp.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/nuts/img.jpg",
+            "thumb": "images/portfolio/nuts/thumb.jpg",
+            "link": "https://ozimnadius.github.io/nuts.io/"
+        },
+        {
+            "type": "other",
+            "img": "images/portfolio/ctm.yam/img.jpg",
+            "thumb": "images/portfolio/ctm.yam/thumb.jpg",
+            "link": "http://ctm.yam.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/web-komp/img.jpg",
+            "thumb": "images/portfolio/web-komp/thumb.jpg",
+            "link": "https://web-komp.ru/"
+        },
+        {
+            "type": "other",
+            "img": "images/portfolio/kp/img.jpg",
+            "thumb": "images/portfolio/kp/thumb.jpg",
+            "link": "https://ozimnadius.github.io/kp.io/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/formatg/img.jpg",
+            "thumb": "images/portfolio/formatg/thumb.jpg",
+            "link": "https://formatg.ru/"
+        },
+        {
+            "type": "land",
+            "img": "images/portfolio/gk-akademi/img.jpg",
+            "thumb": "images/portfolio/gk-akademi/thumb.jpg",
+            "link": "https://gk-akademi.ru/"
+        },
+        {
+            "type": "land",
+            "img": "images/portfolio/pointbreak/img.jpg",
+            "thumb": "images/portfolio/pointbreak/thumb.jpg",
+            "link": "http://pointbreak.moscow/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/stroym/img.jpg",
+            "thumb": "images/portfolio/stroym/thumb.jpg",
+            "link": "https://github.com/Ozimnadius/stroym"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/russochemie/img.jpg",
+            "thumb": "images/portfolio/russochemie/thumb.jpg",
+            "link": "https://ozimnadius.github.io/russochemie.io/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/boshprofi/img.jpg",
+            "thumb": "images/portfolio/boshprofi/thumb.jpg",
+            "link": "https://github.com/Ozimnadius/boshprofi"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/biofollica/img.jpg",
+            "thumb": "images/portfolio/biofollica/thumb.jpg",
+            "link": "https://svda.pro/"
+        },
+        {
+            "type": "land",
+            "img": "images/portfolio/biofollica/img.jpg",
+            "thumb": "images/portfolio/biofollica/thumb.jpg",
+            "link": "http://xn--b1advbobv1i.xn--p1ai/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/czk/img.jpg",
+            "thumb": "images/portfolio/czk/thumb.jpg",
+            "link": "https://czk.camp/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/detskiy/img.jpg",
+            "thumb": "images/portfolio/detskiy/thumb.jpg",
+            "link": "http://detskiy.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/kavkazstore/img.jpg",
+            "thumb": "images/portfolio/kavkazstore/thumb.jpg",
+            "link": "https://kavkazstore.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/farmaonko/img.jpg",
+            "thumb": "images/portfolio/farmaonko/thumb.jpg",
+            "link": "http://farmaonko.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/demurepersona/img.jpg",
+            "thumb": "images/portfolio/demurepersona/thumb.jpg",
+            "link": "http://demurepersona.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/pirogi-minas/img.jpg",
+            "thumb": "images/portfolio/pirogi-minas/thumb.jpg",
+            "link": "https://pirogi-minas.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/aerolaw/img.jpg",
+            "thumb": "images/portfolio/aerolaw/thumb.jpg",
+            "link": "http://aerolaw.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/m3-m12/img.jpg",
+            "thumb": "images/portfolio/m3-m12/thumb.jpg",
+            "link": "https://m3-m12.su/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/paritet-rostov/img.jpg",
+            "thumb": "images/portfolio/paritet-rostov/thumb.jpg",
+            "link": "https://paritet-rostov.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/aurelius/img.jpg",
+            "thumb": "images/portfolio/aurelius/thumb.jpg",
+            "link": "http://aurelius.com.co/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/eng-santehnika/img.jpg",
+            "thumb": "images/portfolio/eng-santehnika/thumb.jpg",
+            "link": "http://eng-santehnika.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/standartagro/img.jpg",
+            "thumb": "images/portfolio/standartagro/thumb.jpg",
+            "link": "http://standartagro.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/metallvam/img.jpg",
+            "thumb": "images/portfolio/metallvam/thumb.jpg",
+            "link": "#"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/olsi-trade/img.jpg",
+            "thumb": "images/portfolio/olsi-trade/thumb.jpg",
+            "link": "http://olsi-trade.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/texmash-metall/img.jpg",
+            "thumb": "images/portfolio/texmash-metall/thumb.jpg",
+            "link": "https://texmash-metall.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/nceo-rt/img.jpg",
+            "thumb": "images/portfolio/nceo-rt/thumb.jpg",
+            "link": "https://nceo-rt.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/gkproject/img.jpg",
+            "thumb": "images/portfolio/gkproject/thumb.jpg",
+            "link": "https://www.gkproject.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/gboxstore/img.jpg",
+            "thumb": "images/portfolio/gboxstore/thumb.jpg",
+            "link": "http://gboxstore.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/tehinwell/img.jpg",
+            "thumb": "images/portfolio/tehinwell/thumb.jpg",
+            "link": "http://tehinwell.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/my-twins/img.jpg",
+            "thumb": "images/portfolio/my-twins/thumb.jpg",
+            "link": "http://my-twins.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/sib-moskva/img.jpg",
+            "thumb": "images/portfolio/sib-moskva/thumb.jpg",
+            "link": "https://www.sib-moskva.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/stp-rf/img.jpg",
+            "thumb": "images/portfolio/stp-rf/thumb.jpg",
+            "link": "http://stp-rf.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/laicats/img.jpg",
+            "thumb": "images/portfolio/laicats/thumb.jpg",
+            "link": "https://laicats.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/karofit/img.jpg",
+            "thumb": "images/portfolio/karofit/thumb.jpg",
+            "link": "https://karofit.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/ritual-gos/img.jpg",
+            "thumb": "images/portfolio/ritual-gos/thumb.jpg",
+            "link": "https://ritual-gos.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/obsidianart/img.jpg",
+            "thumb": "images/portfolio/obsidianart/thumb.jpg",
+            "link": "https://obsidianart.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/emporium-worldwide/img.jpg",
+            "thumb": "images/portfolio/emporium-worldwide/thumb.jpg",
+            "link": "http://emporium-worldwide.com/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/snegohod-buran/img.jpg",
+            "thumb": "images/portfolio/snegohod-buran/thumb.jpg",
+            "link": "https://snegohod-buran.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/rdent/img.jpg",
+            "thumb": "images/portfolio/rdent/thumb.jpg",
+            "link": "https://irdent.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/ecohimki/img.jpg",
+            "thumb": "images/portfolio/ecohimki/thumb.jpg",
+            "link": "http://ecohimki.ru/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/urage/img.jpg",
+            "thumb": "images/portfolio/urage/thumb.jpg",
+            "link": "http://urage.ru.s65.hhos.ru/"
+        },
+        {
+            "type": "shop",
+            "img": "images/portfolio/santehtut/img.jpg",
+            "thumb": "images/portfolio/santehtut/thumb.jpg",
+            "link": "https://santehtut.ru/"
+        },
+        {
+            "type": "land",
+            "img": "images/portfolio/loft-burger/img.jpg",
+            "thumb": "images/portfolio/loft-burger/thumb.jpg",
+            "link": "https://ozimnadius.github.io/burgers.github.io/"
+        },
+        {
+            "type": "corp",
+            "img": "images/portfolio/loft-portfolio/img.jpg",
+            "thumb": "images/portfolio/loft-portfolio/thumb.jpg",
+            "link": "https://ozimnadius.github.io/myPortfolio.io/"
+        }
     ];
