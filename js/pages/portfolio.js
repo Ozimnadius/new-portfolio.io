@@ -25,11 +25,11 @@
 
     }
 
-    $.getJSON('/data/data.json', function (data) {
-        let html = renderList(data.list);
-
-        document.querySelector('.portfolio__grid').outerHTML = html;
-    });
+    fetch('/data/data.json')
+        .then(response => response.json())
+        .then(function (data){
+            document.querySelector('.portfolio__grid').outerHTML = renderList(data.list);
+        });
 
     let filter = document.querySelector('.filter');
 
