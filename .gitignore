@@ -112,6 +112,7 @@ prepros-6.config
 prepros.config
 
 ### NPM ###
-node_modules/
+/node_modules/
 
 # End of https://www.toptal.com/developers/gitignore/api/phpstorm,prepros
+
