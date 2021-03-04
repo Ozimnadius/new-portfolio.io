@@ -2,7 +2,7 @@
 window.addEventListener('load', function () {
 
     ////Naming elements
-//sky
+    //sky
     let starSmall = document.getElementsByClassName("starSmall");
     let starPointy = document.getElementsByClassName("starPointy");
     let starCross = document.getElementsByClassName("starCross");
@@ -10,6 +10,7 @@ window.addEventListener('load', function () {
     //forest
     let grass = document.getElementsByClassName("grass");
     let swingingTree = document.getElementsByClassName("swingingTree");
+    let swingingFurTree = document.getElementsByClassName("furTree");
 
     //fire
     let fireLight = document.getElementsByClassName("fireLight");
@@ -129,6 +130,17 @@ window.addEventListener('load', function () {
         repeat: -1,
         yoyo: true,
     }, 1);
+
+    let tlswingingFurTree = new TimelineMax();
+    tlswingingFurTree.staggerFromTo(swingingFurTree, 4, {
+        transformOrigin: "0% 100%",
+        skewX: "1.5deg",
+    }, {
+        skewX: "-1.5deg",
+        repeat: -1,
+        yoyo: true,
+    }, 1);
+
 
 
     //Fire
