@@ -12,8 +12,13 @@ $vh: 1080;
 }
 
 @function lh($size1, $size2) {
-  $lh: $size2 / $size1;
+  $lh: $size1/$size2;
   @return $lh;
+}
+
+@function em($size1, $size2) {
+  $lh: $size1/$size2;
+  @return #{$lh}em;
 }
 
 @function vh($size) {

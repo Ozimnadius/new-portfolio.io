@@ -67,6 +67,7 @@ body {
 }
 
 .wrapper {
+  width: 100%;
   min-height: 100vh;
   overflow: hidden;
   display: -webkit-box;
@@ -293,9 +294,6 @@ input, textarea {
           transform: translateX(0);
 }
 
-.index {
-  padding-bottom: 100px;
-}
 .index__svg-wrap {
   height: 854px;
   background: #142236;
@@ -324,6 +322,11 @@ input, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 991.98px) {
+  .begin__wrap {
+    padding-top: 0;
+  }
 }
 .begin__wrap .container {
   position: relative;
@@ -380,33 +383,55 @@ input, textarea {
   color: #ffffff;
   font-family: Muli;
   max-width: 560px;
+  font-size: 16px;
+}
+@media (max-width: 1199.98px) {
+  .begin__content {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991.98px) {
+  .begin__content {
+    max-width: 420px;
+    font-size: 12px;
+  }
 }
 .begin__content h2, .begin__content h3, .begin__content h4 {
   margin-bottom: 15px;
 }
+@media (max-width: 991.98px) {
+  .begin__content h2, .begin__content h3, .begin__content h4 {
+    margin-bottom: 10px;
+  }
+}
 .begin__content p {
   margin-bottom: 25px;
+  font-size: 1em;
+  font-weight: 300;
 }
 .begin__content h2 {
-  font-size: 40px;
   font-weight: bold;
   line-height: 110%;
+  font-size: 2.5em;
 }
 .begin__content h3 {
   font-weight: 600;
-  font-size: 34px;
+  font-size: 2.125em;
 }
 .begin__content h4 {
-  font-size: 20px;
   font-weight: 600;
-}
-.begin__content p {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 1.25em;
 }
 .begin__content a {
-  width: 165px;
-  height: 56px;
+  width: 6.875em;
+  height: 2.3333333333em;
+  font-size: 1.5em;
+}
+@media (max-width: 1199.98px) {
+  .begin__content a {
+    width: 140px;
+    height: 50px;
+  }
 }
 .begin__content a:before {
   background: #ffffff;
@@ -1358,5 +1383,43 @@ input, textarea {
 }
 .contact svg {
   display: block;
+}
+
+.banner {
+  padding: 60px;
+  background-color: #142236;
+  color: #ffffff;
+}
+.banner__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.banner__title {
+  font-family: Muli;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.banner__resume {
+  width: 165px;
+  height: 50px;
+  font-size: 18px;
+}
+.banner__resume:before {
+  background-color: #ffffff;
+}
+
+.footer {
+  padding: 40px;
+}
+.footer__copy {
+  text-align: center;
+  color: #142236;
+  font-size: 16px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

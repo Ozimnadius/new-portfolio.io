@@ -13,5 +13,23 @@ window.addEventListener('load', function () {
         autoplay: {
             delay: 7000,
         },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            // when window width is >= 992px
+            992: {
+                slidesPerView: 5,
+                spaceBetween: 30
+            },
+            // when window width is >= 1200px
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 70
+            }
+        }
     });
 });

@@ -18,9 +18,7 @@
             </div>`;
         });
 
-        return `<div class="portfolio__grid">
-            ${items.join('')}
-                </div>`;
+        return `<div class="swiper-wrapper portfolio__grid">${items.join('')}</div>`;
 
 
     }
@@ -28,7 +26,7 @@
     fetch('/data/data.json')
         .then(response => response.json())
         .then(function (data){
-            document.querySelector('.portfolio__grid').outerHTML = renderList(data.list);
+            document.querySelector('.portfolio__swiper').innerHTML = renderList(data.list);
         });
 
     let filter = document.querySelector('.filter');

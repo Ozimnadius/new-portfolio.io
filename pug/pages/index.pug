@@ -1162,7 +1162,8 @@ block content
                                 a(href='#' data-type='corp').filter__item Corporate
                                 a(href='#' data-type='land').filter__item Landing
                                 a(href='#' data-type='other').filter__item Other
-                    .portfolio__grid
+                    .portfolio__swiper.swiper-container
+                        .swiper-wrapper.portfolio__grid
                          // each i in portfolioList
                          //     div(data-type=i.type).portfolio__item
                          //         .portfolio__img
@@ -1234,3 +1235,13 @@ block content
                                                 </svg>
                                             .contact__right
                                                 a(href='mailto:mikhail-seregin@yandex.ru').email mikhail-seregin@yandex.ru
+        //- banner
+        section.index__banner
+            .banner
+                .container
+                    .banner__flex
+                        .banner__left
+                            h2.banner__title WE DO GREAT WORK. EVERY DAY.
+                            .banner__sub Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        .banner__right
+                            a(href='https://hh.ru/resume/e1aaa07eff016819120039ed1f74545a356245' target='_blank').banner__resume.btn Hire Me

@@ -1,11 +1,11 @@
-.begin{
+.begin {
   position: relative;
 
-  &__image{
+  &__image {
     display: block;
   }
 
-  &__wrap{
+  &__wrap {
     background-size: cover;
     padding-top: 70px;
     position: absolute;
@@ -16,13 +16,16 @@
     display: flex;
     align-items: center;
     //padding-bottom: 100px;
+    @media (max-width: 991.98px){
+      padding-top: 0;
+    }
 
-    .container{
+    .container {
       position: relative;
     }
   }
 
-  &__quote{
+  &__quote {
     width: 430px;
     height: 53px;
     font-size: 18px;
@@ -38,8 +41,8 @@
     transform-origin: left top;
     top: 360px;
 
-    
-    &:before{
+
+    &:before {
       content: '';
       display: block;
       position: absolute;
@@ -51,7 +54,7 @@
       margin-left: -5px;
     }
 
-    &:after{
+    &:after {
       content: '';
       display: block;
       position: absolute;
@@ -65,45 +68,64 @@
 
   }
 
-  &__content{
+  &__content {
     color: $bg;
     font-family: Muli;
     max-width: 560px;
+    font-size: 16px;
 
-    h2,h3,h4{
+    @media (max-width: 1199.98px) {
+      font-size: 14px;
+    }
+    @media (max-width: 991.98px){
+      max-width: 420px;
+      font-size: 12px;
+    }
+
+    h2, h3, h4 {
       margin-bottom: 15px;
+      @media (max-width: 991.98px) {
+        margin-bottom: 10px;
+      }
     }
 
-    p{
+    p {
       margin-bottom: 25px;
-    }
-
-    h2{
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 110%;
-    }
-
-    h3{
-      font-weight: 600;
-      font-size: 34px;
-    }
-
-    h4{
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    p{
-      font-size: 16px;
+      font-size: em(16, 16);
       font-weight: 300;
     }
 
-    a{
-      width: 165px;
-      height: 56px;
+    h2 {
+      //font-size: 40px;
+      font-weight: bold;
+      line-height: 110%;
+      font-size: em(40, 16);
+    }
 
-      &:before{
+    h3 {
+      font-weight: 600;
+      //font-size: 34px;
+      font-size: em(34, 16);
+    }
+
+    h4 {
+      //font-size: 20px;
+      font-weight: 600;
+      font-size: em(20, 16);
+    }
+
+    a {
+      width: em(165, 24);
+
+      height: em(56, 24);
+
+      font-size: em(24, 16);
+      @media (max-width: 1199.98px) {
+        width: 140px;
+        height: 50px;
+      }
+
+      &:before {
         background: $bg;
       }
     }

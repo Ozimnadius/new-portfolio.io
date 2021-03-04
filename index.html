@@ -945,14 +945,16 @@
                     <div class="filter__list"><a class="filter__item active" href="#" data-type="all">All</a><a class="filter__item" href="#" data-type="shop">E-shop</a><a class="filter__item" href="#" data-type="corp">Corporate</a><a class="filter__item" href="#" data-type="land">Landing</a><a class="filter__item" href="#" data-type="other">Other</a></div>
                   </div>
                 </div>
-                <div class="portfolio__grid">
-                  <!-- each i in portfolioList-->
-                  <!--     div(data-type=i.type).portfolio__item-->
-                  <!--         .portfolio__img-->
-                  <!--             +image(i.thumb,'potrfolio__img-img')-->
-                  <!--         .portfolio__links-->
-                  <!--             a(href=i.img target='_blank').portfolio__view.portfolio__link View Project-->
-                  <!--             a(href=i.link target='_blank').portfolio__link.portfolio__go Go to project-->
+                <div class="portfolio__swiper swiper-container">
+                  <div class="swiper-wrapper portfolio__grid">
+                    <!-- each i in portfolioList-->
+                    <!--     div(data-type=i.type).portfolio__item-->
+                    <!--         .portfolio__img-->
+                    <!--             +image(i.thumb,'potrfolio__img-img')-->
+                    <!--         .portfolio__links-->
+                    <!--             a(href=i.img target='_blank').portfolio__view.portfolio__link View Project-->
+                    <!--             a(href=i.link target='_blank').portfolio__link.portfolio__go Go to project-->
+                  </div>
                 </div>
               </div>
             </div>
@@ -1030,9 +1032,24 @@
               </div>
             </div>
           </section>
+          <section class="index__banner">
+            <div class="banner">
+              <div class="container">
+                <div class="banner__flex">
+                  <div class="banner__left">
+                    <h2 class="banner__title">WE DO GREAT WORK. EVERY DAY.</h2>
+                    <div class="banner__sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
+                  </div>
+                  <div class="banner__right"><a class="banner__resume btn" href="https://hh.ru/resume/e1aaa07eff016819120039ed1f74545a356245" target="_blank">Hire Me</a></div>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <p class="footer__copy">Copyright By : © Mikle Seregin 2021 - All Right Reserved</p>
+      </footer>
     </div>
     <div class="debug">
       <div>
