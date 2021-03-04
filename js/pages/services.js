@@ -1,68 +1,68 @@
-//about.js
-window.addEventListener('load', function (){
+//services.js
+window.addEventListener('load', function () {
 
     ////Naming elements
 //sky
-    var starSmall = document.getElementsByClassName("starSmall");
-    var starPointy = document.getElementsByClassName("starPointy");
-    var starCross = document.getElementsByClassName("starCross");
+    let starSmall = document.getElementsByClassName("starSmall");
+    let starPointy = document.getElementsByClassName("starPointy");
+    let starCross = document.getElementsByClassName("starCross");
 
-//forest
-    var grass = document.getElementsByClassName("grass");
-    var swingingTree = document.getElementsByClassName("swingingTree");
+    //forest
+    let grass = document.getElementsByClassName("grass");
+    let swingingTree = document.getElementsByClassName("swingingTree");
 
-//fire
-    var fireLight = document.getElementsByClassName("fireLight");
+    //fire
+    let fireLight = document.getElementsByClassName("fireLight");
 
-    var fireRight = document.getElementsByClassName("fireRight");
-    var fireMiddle = document.getElementsByClassName("fireMiddle");
-    var fireLeft = document.getElementsByClassName("fireLeft");
+    let fireRight = document.getElementsByClassName("fireRight");
+    let fireMiddle = document.getElementsByClassName("fireMiddle");
+    let fireLeft = document.getElementsByClassName("fireLeft");
 
-    var fireParticle = document.getElementsByClassName("fireParticle");
-    var fireParticleCross1 = document.getElementsByClassName("fireParticleCross1");
-    var fireParticleCross2 = document.getElementsByClassName("fireParticleCross2");
-    var fireParticleSquare1 = document.getElementsByClassName("fireParticleSquare1");
-    var fireParticleSquare2 = document.getElementsByClassName("fireParticleSquare2");
-    var fireParticleSquare3 = document.getElementsByClassName("fireParticleSquare3");
-    var fireParticleSquare4 = document.getElementsByClassName("fireParticleSquare4");
+    let fireParticle = document.getElementsByClassName("fireParticle");
+    let fireParticleCross1 = document.getElementsByClassName("fireParticleCross1");
+    let fireParticleCross2 = document.getElementsByClassName("fireParticleCross2");
+    let fireParticleSquare1 = document.getElementsByClassName("fireParticleSquare1");
+    let fireParticleSquare2 = document.getElementsByClassName("fireParticleSquare2");
+    let fireParticleSquare3 = document.getElementsByClassName("fireParticleSquare3");
+    let fireParticleSquare4 = document.getElementsByClassName("fireParticleSquare4");
 
-    var shadowTrunk1 = document.getElementsByClassName("shadowTrunk1");
-    var shadowTrunk2 = document.getElementsByClassName("shadowTrunk2");
-
-
-//characters
-    var marshmallow = document.getElementsByClassName("marshmallow");
-
-    var blueArm = document.getElementsByClassName("blueArm");
-    var blueStick = document.getElementsByClassName("blueStick");
-
-    var redArm = document.getElementsByClassName("redArm");
-    var redStick = document.getElementsByClassName("redStick");
-
-    var characterEyes = document.getElementsByClassName("characterEyes");
+    let shadowTrunk1 = document.getElementsByClassName("shadowTrunk1");
+    let shadowTrunk2 = document.getElementsByClassName("shadowTrunk2");
 
 
-//bear
-    var bearFace = document.getElementsByClassName("bearFace");
+    //characters
+    let marshmallow = document.getElementsByClassName("marshmallow");
 
-    var bearBody = document.getElementsByClassName("bearBody");
-    var bearEyes = document.getElementsByClassName("bearEyes");
-    var bearNose = document.getElementsByClassName("bearNose");
+    let blueArm = document.getElementsByClassName("blueArm");
+    let blueStick = document.getElementsByClassName("blueStick");
 
-    var bearEars = document.getElementsByClassName("bearEars");
-    var bearEarLeft = document.getElementsByClassName("bearEarLeft");
-    var bearEarRight = document.getElementsByClassName("bearEarRight");
+    let redArm = document.getElementsByClassName("redArm");
+    let redStick = document.getElementsByClassName("redStick");
 
-    var bearBrows = document.getElementsByClassName("bearBrows");
-
-    var bearPaws = document.getElementsByClassName("bearPaws");
-    var bearPawRight = document.getElementsByClassName("bearPawRight");
-    var bearPawLeft = document.getElementsByClassName("bearPawLeft");
+    let characterEyes = document.getElementsByClassName("characterEyes");
 
 
-//// Animation
-///Sky
-    var tlstarSmall = new TimelineMax();
+    //bear
+    let bearFace = document.getElementsByClassName("bearFace");
+
+    let bearBody = document.getElementsByClassName("bearBody");
+    let bearEyes = document.getElementsByClassName("bearEyes");
+    let bearNose = document.getElementsByClassName("bearNose");
+
+    let bearEars = document.getElementsByClassName("bearEars");
+    let bearEarLeft = document.getElementsByClassName("bearEarLeft");
+    let bearEarRight = document.getElementsByClassName("bearEarRight");
+
+    let bearBrows = document.getElementsByClassName("bearBrows");
+
+    let bearPaws = document.getElementsByClassName("bearPaws");
+    let bearPawRight = document.getElementsByClassName("bearPawRight");
+    let bearPawLeft = document.getElementsByClassName("bearPawLeft");
+
+
+    //// Animation
+    ///Sky
+    let tlstarSmall = new TimelineMax();
     tlstarSmall.staggerFromTo(starSmall, .5, {
         opacity: 1
     }, {
@@ -72,7 +72,7 @@ window.addEventListener('load', function (){
         yoyo: true
     }, 3.5)
 
-    var tlstarPointy = new TimelineMax();
+    let tlstarPointy = new TimelineMax();
     tlstarPointy.staggerFromTo(starPointy, 2, {
         transformOrigin: "50% 50%",
         scaleY: .75,
@@ -85,7 +85,7 @@ window.addEventListener('load', function (){
     }, 2)
 
 
-    var tlstarRotate = new TimelineMax({
+    let tlstarRotate = new TimelineMax({
         repeat: -1,
     });
     tlstarRotate.staggerTo(starCross, 30, {
@@ -94,7 +94,7 @@ window.addEventListener('load', function (){
         ease: "linear"
     }, 3)
 
-    var tlstarCross = new TimelineMax();
+    let tlstarCross = new TimelineMax();
     tlstarCross.staggerFromTo(starCross, 1, {
         transformOrigin: "50% 50%",
         scaleY: .9,
@@ -107,9 +107,9 @@ window.addEventListener('load', function (){
     }, 3)
 
 
-///Forest
-//grass
-    var tlgrass = new TimelineMax();
+    ///Forest
+    //grass
+    let tlgrass = new TimelineMax();
     tlgrass.staggerFromTo(grass, 2, {
         transformOrigin: "0% 100%",
         skewX: "10deg"
@@ -119,8 +119,8 @@ window.addEventListener('load', function (){
         yoyo: true
     }, 0.3);
 
-//tree
-    var tlswingingTree = new TimelineMax();
+    //tree
+    let tlswingingTree = new TimelineMax();
     tlswingingTree.staggerFromTo(swingingTree, 2, {
         transformOrigin: "0% 100%",
         skewX: "1.5deg",
@@ -131,8 +131,8 @@ window.addEventListener('load', function (){
     }, 1);
 
 
-//Fire
-    var tlfire = new TimelineMax();
+    //Fire
+    let tlfire = new TimelineMax();
     tlfire.staggerFromTo([fireLeft, fireMiddle, fireRight], .6, {
         transformOrigin: "50% 100%",
         scaleY: 1
@@ -142,7 +142,7 @@ window.addEventListener('load', function (){
         yoyo: true,
     }, .3);
 
-    var tlfireParticles = new TimelineMax();
+    let tlfireParticles = new TimelineMax();
     tlfireParticles.staggerFromTo(fireParticle, 5, {
         y: 10,
         opacity: 1
@@ -153,7 +153,7 @@ window.addEventListener('load', function (){
         repeat: -1,
     }, .5)
 
-    var tlfireLight = new TimelineMax();
+    let tlfireLight = new TimelineMax();
     tlfireLight.to(fireLight, 2, {
         transformOrigin: "50% 50%",
         scaleX: .5,
@@ -163,7 +163,7 @@ window.addEventListener('load', function (){
         yoyo: true
     })
 
-    var tlshadowtrunkOne = new TimelineMax();
+    let tlshadowtrunkOne = new TimelineMax();
     tlshadowtrunkOne.to(shadowTrunk1, 2, {
         transformOrigin: "100% 50%",
         scaleX: .8,
@@ -172,7 +172,7 @@ window.addEventListener('load', function (){
         yoyo: true
     })
 
-    var tlshadowtrunk2 = new TimelineMax();
+    let tlshadowtrunk2 = new TimelineMax();
     tlshadowtrunk2.to(shadowTrunk2, 2, {
         transformOrigin: "50% 0%",
         scaleY: .7,
@@ -182,8 +182,8 @@ window.addEventListener('load', function (){
     })
 
 
-//Marshmallows
-    var tlblueArm = new TimelineMax();
+    //Marshmallows
+    let tlblueArm = new TimelineMax();
     tlblueArm.to([blueArm, blueStick], 1.5, {
         transformOrigin: "0% 0%",
         rotation: "8deg",
@@ -191,7 +191,7 @@ window.addEventListener('load', function (){
         yoyo: true,
         ease: "linear"
     })
-    var tlblueStick = new TimelineMax();
+    let tlblueStick = new TimelineMax();
     tlblueStick.to(blueStick, 1.5, {
         y: 2,
         repeat: -1,
@@ -199,7 +199,7 @@ window.addEventListener('load', function (){
         ease: "linear"
     })
 
-    var tlredArm = new TimelineMax();
+    let tlredArm = new TimelineMax();
     tlredArm.to([redArm, redStick], 1.5, {
         transformOrigin: "100% 0%",
         rotation: "12deg",
@@ -207,7 +207,7 @@ window.addEventListener('load', function (){
         yoyo: true,
         ease: "linear"
     })
-    var tlredStick = new TimelineMax();
+    let tlredStick = new TimelineMax();
     tlredStick.to(redStick, 1.5, {
         y: -3,
         repeat: -1,
@@ -215,13 +215,13 @@ window.addEventListener('load', function (){
         ease: "linear"
     })
 
-    var tlcharacterEyes = new TimelineMax({repeat: -1});
+    let tlcharacterEyes = new TimelineMax({repeat: -1});
     tlcharacterEyes.to(characterEyes, .2, {opacity: 0}, 4)
     tlcharacterEyes.to(characterEyes, .2, {opacity: 1})
 
 
-//Bear
-    var tlbearAppear = new TimelineMax({
+    //Bear
+    let tlbearAppear = new TimelineMax({
         repeat: -1,
         repeatDelay: 10
     });
@@ -248,7 +248,7 @@ window.addEventListener('load', function (){
         scaleY: 0,
     }, 6)
 
-    var tlbearBlink = new TimelineMax({repeat: -1});
+    let tlbearBlink = new TimelineMax({repeat: -1});
     tlbearBlink.to(bearEyes, .2, {opacity: 0}, 4)
     tlbearBlink.to(bearEyes, .2, {opacity: 1})
 });
