@@ -1,14 +1,29 @@
 .feed {
   background-color: #fafafa;
   padding: 120px 0;
+  @media (max-width: 991.98px) {
+    padding: 60px 0;
+    padding-top: 30px;
+  }
+  @media (max-width: 767.98px) {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
 
   &__grid {
     display: grid;
     grid-template-columns: 7fr 5fr;
+    grid-template-areas: 'left right';
     grid-gap: 30px;
+    @media (max-width: 991.98px) {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'right' 'left';
+    }
+
   }
 
   &__left {
+    grid-area: left;
     display: flex;
     flex-direction: column;
   }
@@ -33,6 +48,9 @@
 
   &__desc {
     margin-bottom: 50px;
+    @media (max-width: 767.98px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__form {
@@ -49,6 +67,12 @@
     grid-template-areas: 'name mail' 'msg msg';
     grid-gap: 15px;
     margin-bottom: 25px;
+    @media (max-width: 767.98px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+      grid-template-areas: 'name' 'mail' 'msg';
+    }
   }
 
   &__name {
@@ -73,14 +97,23 @@
     &_area {
       height: 100%;
       resize: none;
+      min-height: 150px;
     }
   }
 
-  &__submit{
+  &__submit {
     align-self: flex-end;
     width: 165px;
     height: 50px;
     font-size: 18px;
+  }
+
+  &__right {
+    grid-area: right;
+    //margin: 0 -15px;
+    @media (max-width: 767.98px) {
+      margin: 0 -15px;
+    }
   }
 
 }

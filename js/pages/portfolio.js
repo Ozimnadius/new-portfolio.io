@@ -1,9 +1,9 @@
 //portfolio.js
-(function (){
+window.addEventListener('load', function (){
     function renderList(data) {
 
         let items = data.map(function (i) {
-            return `<div class="portfolio__item" data-type="${i.type}">
+            return `<div class="portfolio__item swiper-slide" data-type="${i.type}">
                 <div class="portfolio__img">
                     <img class="potrfolio__img-img" src="${i.thumb}" alt="lorem"/>
                 </div>
@@ -25,7 +25,7 @@
 
     fetch('/data/data.json')
         .then(response => response.json())
-        .then(function (data){
+        .then(function (data) {
             document.querySelector('.portfolio__swiper').innerHTML = renderList(data.list);
         });
 
@@ -55,4 +55,14 @@
 
         }
     });
-})();
+
+    let swiper = document.querySelector('.portfolio__swiper');
+
+    swiper.addEventListener('click', function (e) {
+        let target = e.target;
+
+        if (target.classList.contains('portfolio__item')) {
+            target.classList.toggle('hover');
+        }
+    });
+});

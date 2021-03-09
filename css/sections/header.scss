@@ -5,62 +5,131 @@
   left: 0;
   width: 100%;
   padding-top: 20px;
+  @media (max-width: 767.98px) {
+    padding-top: 10px;
+  }
 
-  .container{
+  .container {
     display: flex;
     align-items: center;
   }
 
-  &__title{
+  &__mmenu {
+    display: none;
+    padding: 10px;
+    margin: -10px;
+    @media (max-width: 767.98px) {
+      display: block;
+      margin-right: auto;
+    }
+
+    svg {
+      display: block;
+      width: 30px;
+      height: 30px;
+      fill: $bg;
+    }
+  }
+
+  &__title {
     color: $bg;
     font-size: 35px;
     font-weight: bold;
     margin-right: auto;
-  }
-  
-  &__nav{
-    margin-right: 100px;
+    @include sm-block {
+      display: none;
+    }
   }
 
-  &__contacts{
+  &__nav {
+    margin-right: 100px;
+    @media (max-width: 767.98px) {
+      display: none;
+      margin: 0;
+      position: fixed;
+      top: 0;
+      height: 100vh;
+      left: 0;
+      right: 0;
+      z-index: 102;
+    }
+    &.open{
+      display: block;
+    }
+
+    &-close{
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      @media (max-width: 767.98px){
+        display: block;
+      }
+
+      svg{
+        pointer-events: none;
+        width: 25px;
+        height: 25px;
+        fill: $bg;
+      }
+    }
+  }
+
+  &__contacts {
     margin: 0 -10px;
     display: flex;
   }
 
-  &__contact{
+  &__contact {
     padding: 7.5px;
     fill: $bg;
     @include tr;
 
-    &:hover{
+    &:hover {
       fill: $btn;
     }
 
-    svg{
+    svg {
       width: 20px;
       height: 20px;
       display: block;
+      @media (max-width: 767.98px){
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 
 }
 
-.nav{
+.nav {
   display: flex;
   margin: 0 -20px;
+  @media (max-width: 991.98px) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(black,.7);
+  }
 
-  &__item{
+  &__item {
     color: $bg;
     font-weight: 400;
     margin: 0 20px;
     overflow: hidden;
     position: relative;
     padding: 10px 0;
+    @media (max-width: 767.98px){
+      font-size: 26px;
+    }
 
 
     @include tr;
 
-    &:before{
+    &:before {
       content: '';
       display: block;
       position: absolute;
@@ -71,12 +140,19 @@
       background-color: $btn;
       transform: translateX(-100%);
       @include tr;
+      @media (max-width: 991.98px) {
+        display: none;
+      }
     }
 
 
-    &:hover{
+    &:hover {
       color: $btn;
-      &:before{
+      @media (max-width: 991.98px) {
+        color: $bg;
+      }
+
+      &:before {
         transform: translateX(0);
       }
     }

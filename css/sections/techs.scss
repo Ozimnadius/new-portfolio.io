@@ -1,6 +1,9 @@
 .techs{
   background-color: #142236;
   padding: 55px 0;
+  @media (max-width: 767.98px){
+    padding: 20px 0;
+  }
 
   &__slider{
     position: relative;

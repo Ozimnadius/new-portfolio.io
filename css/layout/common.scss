@@ -14,6 +14,7 @@
   position: relative;
   transition: .4s;
 
+
   &:before{
     content: '';
     display: block;
@@ -44,4 +45,41 @@
   color: #cccccc;
   font-size: 16px;
   font-weight: 400;
+}
+
+.top{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background-color: $btn;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 101;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+  pointer-events: none;
+  @include tr;
+  @media (max-width: 991.98px){
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  &.active{
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  svg{
+    width: 23px;
+    height: 23px;
+    fill: $bg;
+    @media (max-width: 991.98px){
+      width: 20px;
+      height: 20px;
+    }
+  }
 }

@@ -176,15 +176,15 @@
     },
     {
       "type": "corp",
-      "img": "images/portfolio/biofollica/img.jpg",
-      "thumb": "images/portfolio/biofollica/thumb.jpg",
+      "img": "images/portfolio/svda/img.jpg",
+      "thumb": "images/portfolio/svda/thumb.jpg",
       "link": "https://svda.pro/"
     },
     {
       "type": "land",
-      "img": "images/portfolio/biofollica/img.jpg",
-      "thumb": "images/portfolio/biofollica/thumb.jpg",
-      "link": "http://xn--b1advbobv1i.xn--p1ai/"
+      "img": "images/portfolio/invisiongroup/img.jpg",
+      "thumb": "images/portfolio/invisiongroup/thumb.jpg",
+      "link": "http://invisiongroup.ru/"
     },
     {
       "type": "corp",

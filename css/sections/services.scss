@@ -1,6 +1,10 @@
 .services {
   background-color: #fafafa;
   padding: 50px 0;
+  padding-bottom: 70px;
+  @media (max-width: 767.98px){
+    padding-bottom: 50px;
+  }
 
   &__sub {
     text-align: center;
@@ -8,24 +12,54 @@
 
   &__title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
+    @media (max-width: 991.98px){
+      margin-bottom: 0;
+    }
+    @media (max-width: 767.98px){
+      margin-bottom: 40px;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-template-areas: 'left txt' 'left image';
+    grid-gap: 0 30px;
+    @media (max-width: 991.98px){
+      grid-template-columns: 1fr;
+      grid-template-areas: 'image' 'left' 'txt';
+      grid-gap: 20px;
+    }
+  }
+
+  &__left {
+    grid-area: left;
+  }
+
+  &__txt {
+    grid-area: txt;
+  }
+
+  &__image {
+    grid-area: image;
   }
 
   &__desc {
     font-family: Muli;
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
+    @media (max-width: 991.98px){
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
     margin-bottom: 40px;
+    @media (max-width: 991.98px){
+      margin-bottom: 25px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -36,11 +70,17 @@
     margin-bottom: 50px;
     position: relative;
     z-index: 2;
+    @media (max-width: 991.98px){
+      margin-bottom: 0;
+    }
   }
 
   &__img {
     background: #fafafa;
     position: relative;
+    @media (max-width: 767.98px){
+      margin-bottom: 30px;
+    }
 
     &:before {
       content: '';
@@ -59,6 +99,24 @@
     right: -$offset;
     width: calc(100% + #{$offset*2});
     height: calc(100% + #{$offset*2});
+
+    @media (max-width: 991.98px){
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 767.98px){
+      top: -$offset;
+      bottom: -$offset;
+      left: -$offset;
+      right: -$offset;
+      width: calc(100% + #{$offset*2});
+      height: calc(100% + #{$offset*2});
+    }
+
   }
 
   .st0 {
@@ -515,20 +573,20 @@
 
 }
 
-.service{
+.service {
   display: grid;
   grid-template-columns: 68px 1fr;
   grid-gap: 30px;
   align-items: center;
 
-  &__name{
+  &__name {
     font-family: Muli;
     font-size: 26px;
     font-weight: 400;
     margin-bottom: 5px;
   }
 
-  &__desc{
+  &__desc {
 
   }
 }
