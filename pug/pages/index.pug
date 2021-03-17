@@ -8,7 +8,7 @@ block content
         //- begin
         section.index__begin
             .begin
-                +image('images/content/begin/bg.png','begin__image')
+                img(src='images/content/begin/bg.png' width='1920px' height='955px').begin__image
                 .begin__wrap
                     .container
                         .begin__quote Portfolio
@@ -31,7 +31,7 @@ block content
                         .about__col
                         .about__col
                             .about__img
-                                +image('images/content/about/avatar-big.jpg','about__img-img')
+                                img(src='images/content/about/avatar-big.jpg' width='300px' height='400px').about__img-img
                         .about__col
                             ol.about__list
                                 li.about__item There were times when I rolled people underground, yes I was a subway driver))).
@@ -52,7 +52,8 @@ block content
                                     li.services__item
                                         .service
                                             .service__img
-                                                +image(i.img,'service__img-img')
+                                                img(src=i.img width='68px' height='68px').service__img-img
+                                                //+image(i.img,'service__img-img')
                                             .service__content
                                                 .service__name= i.name
                                                 .service__desc= i.desc
