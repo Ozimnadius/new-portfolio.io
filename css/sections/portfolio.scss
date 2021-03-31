@@ -60,9 +60,7 @@
     position: relative;
     background: #bcbcbc;
     box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.2);
-    //overflow: hidden;
     flex-shrink: 0;
-    @include tr;
 
     &:before {
       content: '';
