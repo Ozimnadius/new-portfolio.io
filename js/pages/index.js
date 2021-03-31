@@ -1,6 +1,7 @@
 //index.js
 
 window.addEventListener('load', function () {
+
     const techsSwiper = new Swiper('.techs__swiper', {
         slidesPerView: 3,
         spaceBetween: 10,
@@ -33,11 +34,8 @@ window.addEventListener('load', function () {
         }
     });
 
-
     let toTop = document.querySelector('.top');
     window.addEventListener('scroll', function (e){
-
-
        if (document.documentElement.scrollTop>window.innerHeight/2){
            toTop.classList.add('active');
        } else{
