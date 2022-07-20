@@ -2,6 +2,12 @@
   "list": [
     {
       "type": "land",
+      "img": "images/portfolio/bpc/img.jpg",
+      "thumb": "images/portfolio/bpc/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/bpc"
+    },
+    {
+      "type": "land",
       "img": "images/portfolio/suntelpro/img.jpg",
       "thumb": "images/portfolio/suntelpro/thumb.jpg",
       "link": "https://suntelpro.ru/"
