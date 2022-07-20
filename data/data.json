@@ -1,6 +1,90 @@
 {
   "list": [
     {
+      "type": "land",
+      "img": "images/portfolio/suntelpro/img.jpg",
+      "thumb": "images/portfolio/suntelpro/thumb.jpg",
+      "link": "https://suntelpro.ru/"
+    },
+    {
+      "type": "other",
+      "img": "images/portfolio/v-bekon/img.jpg",
+      "thumb": "images/portfolio/v-bekon/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/v-bekon"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/bpcbt/img.jpg",
+      "thumb": "images/portfolio/bpcbt/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/bpcbt"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/npprdt/img.png",
+      "thumb": "images/portfolio/npprdt/thumb.png",
+      "link": "https://github.com/Ozimnadius/npprdt"
+    },
+    {
+      "type": "shop",
+      "img": "images/portfolio/ivatherm/img.jpg",
+      "thumb": "images/portfolio/ivatherm/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/ivatherm"
+    },
+    {
+      "type": "land",
+      "img": "images/portfolio/samcocon/img.jpg",
+      "thumb": "images/portfolio/samcocon/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/samcocon"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/grivko/img.jpg",
+      "thumb": "images/portfolio/grivko/thumb.jpg",
+      "link": "http://user1177.teh-webcomp.ru/"
+    },
+    {
+      "type": "other",
+      "img": "images/portfolio/primem-calc/img.jpg",
+      "thumb": "images/portfolio/primem-calc/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/primem-calc"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/advokatmr/img.jpg",
+      "thumb": "images/portfolio/advokatmr/thumb.jpg",
+      "link": "https://advokatmr.ru/"
+    },
+    {
+      "type": "land",
+      "img": "images/portfolio/gorod-dorog-landing/img.jpg",
+      "thumb": "images/portfolio/gorod-dorog-landing/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/gorod-dorog-landing"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/gorod-dorog-redesign/img.jpg",
+      "thumb": "images/portfolio/gorod-dorog-redesign/thumb.jpg",
+      "link": "https://goroddorog-avto.ru/"
+    },
+    {
+      "type": "land",
+      "img": "images/portfolio/angelovcapital/img.jpg",
+      "thumb": "images/portfolio/angelovcapital/thumb.jpg",
+      "link": "https://angelovcapital.ru/"
+    },
+    {
+      "type": "other",
+      "img": "images/portfolio/zoom/img.jpg",
+      "thumb": "images/portfolio/zoom/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/zoom"
+    },
+    {
+      "type": "shop",
+      "img": "images/portfolio/olato/img.jpg",
+      "thumb": "images/portfolio/olato/thumb.jpg",
+      "link": "http://user710.teh-webcomp.ru/"
+    },
+    {
       "type": "shop",
       "img": "images/portfolio/maxirolls/img.jpg",
       "thumb": "images/portfolio/maxirolls/thumb.jpg",
