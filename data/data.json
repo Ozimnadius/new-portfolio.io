@@ -1,6 +1,24 @@
 {
   "list": [
     {
+      "type": "corp",
+      "img": "images/portfolio/intel-port/img.jpg",
+      "thumb": "images/portfolio/intel-port/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/intel-port"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/mzo-group/img.jpg",
+      "thumb": "images/portfolio/mzo-group/thumb.jpg",
+      "link": "http://user1385.teh-webcomp.ru/"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/center-implant-update/img.jpg",
+      "thumb": "images/portfolio/center-implant-update/thumb.jpg",
+      "link": "https://center-implant.ru/"
+    },
+    {
       "type": "land",
       "img": "images/portfolio/bpc/img.jpg",
       "thumb": "images/portfolio/bpc/thumb.jpg",
