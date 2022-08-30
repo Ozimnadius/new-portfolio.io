@@ -1,6 +1,12 @@
 {
   "list": [
     {
+      "type": "other",
+      "img": "images/portfolio/mcalc/img.jpg",
+      "thumb": "images/portfolio/mcalc/thumb.jpg",
+      "link": "https://user1285.teh-webcomp.ru/kalkulyator-matrasov/"
+    },
+    {
       "type": "corp",
       "img": "images/portfolio/intel-port/img.jpg",
       "thumb": "images/portfolio/intel-port/thumb.jpg",
