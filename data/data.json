@@ -1,10 +1,22 @@
 {
   "list": [
     {
+      "type": "corp",
+      "img": "images/portfolio/kamerkon/img.jpg",
+      "thumb": "images/portfolio/kamerkon/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/kamerkon"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/ps-sever/img.jpg",
+      "thumb": "images/portfolio/ps-sever/thumb.jpg",
+      "link": "https://github.com/Ozimnadius/ps-sever"
+    },
+    {
       "type": "other",
       "img": "images/portfolio/mcalc/img.jpg",
       "thumb": "images/portfolio/mcalc/thumb.jpg",
-      "link": "https://user1285.teh-webcomp.ru/kalkulyator-matrasov/"
+      "link": "https://matratex.net/kalkulyator-matrasov/"
     },
     {
       "type": "corp",

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /*_*
+Allow: /index.html
+Sitemap: http://dev-sm.ru/sitemap.xml
