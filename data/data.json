@@ -1,6 +1,12 @@
 {
   "list": [
     {
+      "type": "other",
+      "img": "images/portfolio/ritual-religion/img.webp",
+      "thumb": "images/portfolio/ritual-religion/thumb.webp",
+      "link": "https://github.com/Ozimnadius/ritual-religion"
+    },
+    {
       "type": "land",
       "img": "images/portfolio/kristallstore-landing/img.jpg",
       "thumb": "images/portfolio/kristallstore-landing/thumb.jpg",
