@@ -1,6 +1,12 @@
 {
   "list": [
     {
+      "type": "corp",
+      "img": "images/portfolio/tng-msk/img.webp",
+      "thumb": "images/portfolio/tng-msk/thumb.webp",
+      "link": "https://github.com/Ozimnadius/tng-msk"
+    },
+    {
       "type": "other",
       "img": "images/portfolio/ritual-religion/img.webp",
       "thumb": "images/portfolio/ritual-religion/thumb.webp",
