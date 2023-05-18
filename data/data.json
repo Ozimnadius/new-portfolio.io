@@ -2,6 +2,12 @@
   "list": [
     {
       "type": "corp",
+      "img": "images/portfolio/muc.expert/img.webp",
+      "thumb": "images/portfolio/muc.expert/thumb.webp",
+      "link": "https://github.com/Ozimnadius/mcu.expert"
+    },
+    {
+      "type": "corp",
       "img": "images/portfolio/tng-msk/img.webp",
       "thumb": "images/portfolio/tng-msk/thumb.webp",
       "link": "https://github.com/Ozimnadius/tng-msk"
