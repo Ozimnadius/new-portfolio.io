@@ -1167,13 +1167,13 @@ block content
                                 a(href='#' data-type='other').filter__item Other
                     .portfolio__swiper.swiper-container
                         .swiper-wrapper.portfolio__grid
-                         // each i in portfolioList
-                         //     div(data-type=i.type).portfolio__item
-                         //         .portfolio__img
-                         //             +image(i.thumb,'potrfolio__img-img')
-                         //         .portfolio__links
-                         //             a(href=i.img target='_blank').portfolio__view.portfolio__link View Project
-                         //             a(href=i.link target='_blank').portfolio__link.portfolio__go Go to project
+                          each i in portfolioList
+                              div(data-type=i.type).portfolio__item
+                                  .portfolio__img
+                                      +image(i.thumb,'potrfolio__img-img')
+                                  .portfolio__links
+                                      a(href=i.img target='_blank').portfolio__view.portfolio__link View Project
+                                      a(href=i.link target='_blank').portfolio__link.portfolio__go Go to project
         //- feed
         section.index__feed#contact
             .feed

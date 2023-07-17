@@ -1,5 +1,5 @@
 //portfolio.js
-window.addEventListener('load', function (){
+window.addEventListener('load', function () {
     function renderList(data) {
 
         let items = data.map(function (i) {
@@ -23,11 +23,11 @@ window.addEventListener('load', function (){
 
     }
 
-    fetch('/data/data.json')
-        .then(response => response.json())
-        .then(function (data) {
-            document.querySelector('.portfolio__swiper').innerHTML = renderList(data.list);
-        });
+    // fetch('/data/data.json')
+    //     .then(response => response.json())
+    //     .then(function (data) {
+    //         document.querySelector('.portfolio__swiper').innerHTML = renderList(data.list);
+    //     });
 
     let filter = document.querySelector('.filter');
 
