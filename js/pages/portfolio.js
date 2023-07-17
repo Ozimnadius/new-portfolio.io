@@ -23,7 +23,7 @@ window.addEventListener('load', function (){
 
     }
 
-    fetch('../data/data.json')
+    fetch('/data/data.json')
         .then(response => response.json())
         .then(function (data) {
             document.querySelector('.portfolio__swiper').innerHTML = renderList(data.list);
