@@ -1,6 +1,30 @@
 {
   "list": [
     {
+      "type": "shop",
+      "img": "images/portfolio/mongolcashmere/img.webp",
+      "thumb": "images/portfolio/mongolcashmere/thumb.webp",
+      "link": "https://mongolcashmere.ru/"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/sscreen/img.webp",
+      "thumb": "images/portfolio/sscreen/thumb.webp",
+      "link": "https://sscreen.ru/"
+    },
+    {
+      "type": "corp",
+      "img": "images/portfolio/investnova/img.webp",
+      "thumb": "images/portfolio/investnova/thumb.webp",
+      "link": "https://investnova.ru/"
+    },
+    {
+      "type": "shop",
+      "img": "images/portfolio/karat/img.webp",
+      "thumb": "images/portfolio/karat/thumb.webp",
+      "link": "http://user1609.teh-webcomp.ru/"
+    },
+    {
       "type": "corp",
       "img": "images/portfolio/mcu.expert/img.webp",
       "thumb": "images/portfolio/mcu.expert/thumb.webp",
