@@ -1,4 +1,5 @@
 //feed.js
+/*
 window.addEventListener('load', function () {
     let form  = document.querySelector('.feed__form');
 
@@ -14,4 +15,4 @@ window.addEventListener('load', function () {
         });
     });
 
-});
+});*/
