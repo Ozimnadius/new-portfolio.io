@@ -399,7 +399,10 @@ window.addEventListener('load', function () {
         let items = data.map(function (i) {
             return `<div class="portfolio__item swiper-slide" data-type="${i.type}">
                 <div class="portfolio__img">
-                    <img class="potrfolio__img-img" src="${i.thumb}" alt="lorem"/>
+                    <img class="potrfolio__img-img" src="${i.thumb}" 
+                    alt="lorem"
+                    loading="lazy"
+                    >
                 </div>
                 <div class="portfolio__links">
                     <a class="portfolio__view portfolio__link" href="${i.img}" target="_blank">
