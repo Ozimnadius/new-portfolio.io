@@ -1,5 +1,4 @@
 //index.js
-
 window.addEventListener('load', function () {
 
     const techsSwiper = new Swiper('.techs__swiper', {

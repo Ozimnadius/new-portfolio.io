@@ -31,7 +31,7 @@ const jsTools = {
     imagesResize: function (src) {
         let img = document.querySelectorAll('img');
 
-        for (let i=0;i<img.length;i++){
+        for (let i = 0; i < img.length; i++) {
             img[i].src = src;
         }
     }
